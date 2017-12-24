@@ -1,0 +1,3 @@
+--no-timeouts
+--require @babel/register
+test/**/*.test.js

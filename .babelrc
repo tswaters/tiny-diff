@@ -1,0 +1,13 @@
+{
+  "env": {
+    "instrument": {
+      "presets": ["@babel/preset-env"],
+      "plugins": ["istanbul"]
+    },
+    "test": {
+      "presets": ["@babel/preset-env"],
+      "sourceMaps": true,
+      "retainLines": true
+    }
+  }
+}

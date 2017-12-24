@@ -1,0 +1,51 @@
+{
+  "name": "tiny-diff",
+  "version": "0.0.0",
+  "description": "Tiny diff library",
+  "main": "src/diff.js",
+  "scripts": {
+    "prepublishOnly": "npm run lint && npm run test && npm run build",
+    "prebuild": "rimraf lib es dist",
+    "build": "rollup -c rollup.config.js",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "eslint .",
+    "pretest": "rimraf .nyc_output coverage",
+    "test": "cross-env NODE_ENV=instrument nyc mocha"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.js"
+    ],
+    "exclude": [],
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "sourceMap": false,
+    "instrument": false
+  },
+  "keywords": [],
+  "author": "Tyler Waters <tyler.waters@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tswaters/tiny-diff.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.35",
+    "@babel/core": "^7.0.0-beta.35",
+    "@babel/preset-env": "^7.0.0-beta.35",
+    "@babel/register": "^7.0.0-beta.35",
+    "babel-plugin-istanbul": "^4.1.2-candidate.0",
+    "babel-preset-minify": "^0.2.0",
+    "cross-env": "^5.1.3",
+    "eslint": "^4.14.0",
+    "eslint-config-tswaters": "github:tswaters/eslint-config-tswaters",
+    "mocha": "^4.0.1",
+    "nyc": "^11.4.1",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.53.0",
+    "rollup-plugin-babel": "^4.0.0-beta.0",
+    "rollup-plugin-uglify": "^2.0.1"
+  }
+}
