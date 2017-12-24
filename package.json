@@ -12,6 +12,9 @@
     "pretest": "rimraf .nyc_output coverage",
     "test": "cross-env NODE_ENV=instrument nyc mocha"
   },
+  "files": [
+    "dist"
+  ],
   "nyc": {
     "include": [
       "src/**/*.js"
