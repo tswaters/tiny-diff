@@ -1,5 +1,11 @@
 # Tiny Diff
 
+[![npm version][npm-badge]][npm-url]
+[![Build Status][travis-badge]][travis-url]
+[![Coverage Status][coveralls-badge]][coveralls-url]
+[![Dependency Status][dependency-badge]][dependency-url]
+[![devDependency Status][devDependency-badge]][devDependency-url]
+
 Deep compare two javascript objects and returns additions, removals and edits.
 
 ## Installation
@@ -61,3 +67,14 @@ Refer to the tests directory for more examples.
 diff({foo: {bar: 'baz'}}, {foo: {bar: 'qoz'}})
 // [{ kind: 'update', path: 'foo.bar', left: 'baz', right: 'qoz'}]
 ```
+
+[npm-badge]: https://badge.fury.io/js/tiny-diff.svg
+[npm-url]: https://badge.fury.io/js/tiny-diff
+[travis-badge]: https://travis-ci.org/tswaters/tiny-diff.svg?branch=master
+[travis-url]: https://travis-ci.org/tswaters/tiny-diff
+[coveralls-badge]: https://coveralls.io/repos/github/tswaters/tiny-diff/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/tswaters/tiny-diff?branch=master
+[dependency-badge]: https://david-dm.org/tswaters/tiny-diff.svg
+[dependency-url]: https://david-dm.org/tswaters/tiny-diff
+[devDependency-badge]: https://david-dm.org/tswaters/tiny-diff/dev-status.svg
+[devDependency-url]: https://david-dm.org/tswaters/tiny-diff?type=dev
