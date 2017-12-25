@@ -68,8 +68,8 @@ diff({foo: {bar: 'baz'}}, {foo: {bar: 'qoz'}})
 // [{ kind: 'update', path: 'foo.bar', left: 'baz', right: 'qoz'}]
 ```
 
-[npm-badge]: https://badge.fury.io/js/@tswaters/tiny-diff.svg
-[npm-url]: https://badge.fury.io/js/@tswaters/tiny-diff
+[npm-badge]: https://badge.fury.io/js/%40tswaters%2Ftiny-diff.svg
+[npm-url]: https://badge.fury.io/js/%40tswaters/tiny-diff
 [travis-badge]: https://travis-ci.org/tswaters/tiny-diff.svg?branch=master
 [travis-url]: https://travis-ci.org/tswaters/tiny-diff
 [coveralls-badge]: https://coveralls.io/repos/github/tswaters/tiny-diff/badge.svg?branch=master
