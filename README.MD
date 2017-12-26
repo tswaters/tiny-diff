@@ -20,9 +20,9 @@ The code has been transpiled to es5 syntax so it should work in most environment
 
 ```
 ./dist/tiny-diff.js - cjs module export
-./dist/tiny-diff.mjs - es module export
 ./dist/tiny-diff.umd.js - umd browser bundle
 ./dist/tiny-diff.umd.minjs - minified umd browser bundle
+./es/index.mjs - es module export
 ```
 
 `main` points at `./dist/tiny-diff.js`
