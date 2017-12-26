@@ -2,7 +2,7 @@
   "name": "@tswaters/tiny-diff",
   "version": "0.0.1",
   "description": "Tiny diff library",
-  "main": "src/diff.js",
+  "main": "dist/tiny-diff.js",
   "scripts": {
     "prepublishOnly": "npm run lint && npm run test && npm run build",
     "prebuild": "rimraf lib es dist",
