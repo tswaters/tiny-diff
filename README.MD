@@ -18,14 +18,10 @@ npm i tiny-diff
 
 The code has been transpiled to es5 syntax so it should work in most environments.
 
-```
-./dist/tiny-diff.js - cjs module export
-./dist/tiny-diff.umd.js - umd browser bundle
-./dist/tiny-diff.umd.minjs - minified umd browser bundle
-./es/index.mjs - es module export
-```
-
-`main` points at `./dist/tiny-diff.js`
+* `./dist/tiny-diff.js` - cjs bundle, transpiled to node4. referenced in package.json's main entry
+* `./dist/tiny-diff.mjs` - es6 exports. transpiled to node4. referenced in package.json's module entry
+* `./dist/tiny-diff.umd.js` - browser bundle, transpiled to ie8.
+* `./dist/tiny-diff.umd.min.js` - browser bundle minified
 
 This module needs the following polyfills:
 
@@ -37,7 +33,7 @@ This module needs the following polyfills:
 
 ```js
 const {diff} = require('@tswaters/tiny-diff')
-// or: import {diff} from 'tiny-diff/es'
+// or: import {diff} from '@tswaters/tiny-diff'
 // or: var diff = window.tinyDiff.diff
 // or: define(...) // whatever; it's a umd export, figure it out
 diff(right, left)

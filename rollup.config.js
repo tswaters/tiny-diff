@@ -29,7 +29,7 @@ const config = (browser, minify) => {
       name: 'tinyDiff',
       format: 'umd'
     } : [{
-      file: './es/index.mjs',
+      file: './dist/tiny-diff.mjs',
       format: 'es'
     }, {
       file: './dist/tiny-diff.js',
