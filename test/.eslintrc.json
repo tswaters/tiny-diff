@@ -1,3 +1,5 @@
 {
-  "extends": "tswaters/tests"
+  "env": {
+    "mocha": true
+  }
 }

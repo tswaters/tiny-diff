@@ -1,7 +1,10 @@
 
 const isDate = obj => obj instanceof Date
 const isObject = obj => obj !== null && typeof obj === 'object'
-const hop = (obj, key) => Object.getOwnPropertyDescriptors(obj).hasOwnProperty(key)
+const hop = (obj, key) => {
+  const props = Object.getOwnPropertyDescriptors(obj)
+  return Object.prototype.hasOwnProperty.call(props, key)
+}
 
 const _get_path = (path, is_array) => {
   const prefix = path === '' ? '' : '.'

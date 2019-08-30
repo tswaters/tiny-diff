@@ -1,7 +1,7 @@
 {
   "env": {
     "instrument": {
-      "presets": [["@babel/preset-env", {"useBuiltIns": "usage"}]],
+      "presets": ["@babel/preset-env"],
       "plugins": ["istanbul"]
     },
     "test": {
